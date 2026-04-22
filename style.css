@@ -1,153 +1,247 @@
+css * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="pt-br">
+body {
+    font-family: 'Inter', sans-serif;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação Sem Fronteiras</title>
+/* NAVBAR */
+.navbar {
+    background: #0066CC;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
 
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
-        rel="stylesheet">
-</head>
+.logo {
+    display: flex;
+    gap: 10px;
+    font-family: 'Outfit';
+    font-weight: 700;
+}
 
-<body>
+.logo span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+}
 
-    <header class="navbar">
-        <div class="logo">
-            <div>
-                educação
-                <span>sem fronteiras</span>
-            </div>
-        </div>
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
 
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">CURSOS</a>
-            <a href="#">SOBRE NÓS</a>
-        </nav>
+.actions {
+    display: flex;
+    gap: 15px;
+}
 
-        <div class="actions">
-            <span>Entrar</span>
-            <button class="btn">Cadastrar</button>
-        </div>
-    </header>
+.btn {
+    background: white;
+    color: #0066CC;
+    padding: 8px 8px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 600;
+}
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>
-                Aprenda Online <br>
-                no seu próprio <br>
-                ritmo
-            </h1>
+/* HERO */
+.hero {
+    background: #0066CC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    color: white;
+}
 
-            <p>
-                Explore uma variedade de cursos e adquira habilidades no conforto da sua casa.
-            </p>
+.hero-text h1 {
+    font-family: 'Outfit';
+    font-size: 56px;
+    margin-bottom: 20px;
+}
 
-            <button class="cta" onclick="explorar()">
-                Explorar cursos →
-            </button>
-        </div>
+.hero-text p {
+    max-width: 400px;
+    margin-bottom: 30px;
+}
 
-        <div class="hero-img">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-        </div>
-    </section>
+.cta {
+    background: black;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 
-    <section class="benefits">
-        <h2>Benefícios</h2>
-        <div class="line"></div>
+.hero-img img {
+    width: 500px;
+    border-radius: 12px;
+}
 
-        <div class="grid">
-            <div class="card">
-                <span>01</span>
-                <h3>Inclusão social e redução das desigualdades</h3>
-                <p class="descricao">Ao oferecer acesso à educação de qualidade, o projeto promove equidade e oportunidades reais de crescimento para todos.</p>
-            </div>
+/* BENEFITS */
+.benefits {
+    padding: 80px 60px;
+}
 
-            <div class="card">
-                <span>02</span>
-                <h3>Aumento da empregabilidade</h3>
-                <p class="descricao">Com capacitação básica e profissionalizante, os participantes podem conquistar empregos formais ou melhorar sua renda.</p>
-            </div>
+.benefits h2 {
+    font-family: 'Outfit';
+}
 
-            <div class="card">
-                <span>03</span>
-                <h3>Desenvolvimento da autonomia</h3>
-                <p class="descricao">Aprenda a ler, escrever, usar a tecnologia ou entender conceitos financeiros ajuda as pessoas a tomarem decisões mais conscientes no dia a dia.</p>
-            </div>
+.line {
+    width: 60px;
+    height: 4px;
+    background: #0066CC;
+    margin: 10px 0 30px;
+}
 
-            <div class="card">
-                <span>04</span>
-                <h3>Fortalecimento da autoestima</h3>
-                <p class="descricao">Conquistar novos conhecimentos eleva a autoconfiança e motiva os alunos a continuarem se desenvolvendo.</p>
-            </div>
+.benefits .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
 
-            <div class="card">
-                <span>05</span>
-                <h3>Melhoria ba qualidade de vida</h3>
-                <p class="descricao">Educação impacta positivamente a saúde, as relações familiares e o bem-estar geral.</p>
-            </div>
+.courses .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
 
-            <div class="card">
-                <span>06</span>
-                <h3>Transformação comunitária</h3>
-                <p class="descricao">Comunidades inteiras se beneficiam quando seus membros têm acesso à educação, pois isso estimula o crescimento coletivo.</p>
-            </div>
-        </div>
-    </section>
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
 
+.card span {
+    font-size: 30px;
+    font-weight: bold;
+}
 
-<section class="courses">
-    <div class="top">
-        <div>
-            <h2>Nossos Cursos</h2>
-            <p>
-                Explore nossa vasta seleção de cursos online, criados por especialistas para ajudá-lo a atingir seus objetivos profissionais e pessoais.
-            </p>
-        </div>
-        <button class="btn-all">Ver Todos</button>
-    </div>
+/* COURSES */
+.courses {
+    background: #0066CC;
+    color: white;
+    padding: 80px 60px;
+}
 
-    <div class="grid">
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
-        <div class="course">
-            <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb">
-                <span class="tag">EDUCAÇÃO</span>
-                <span class="hours">10 HORAS</span>
-            </div>
+.btn-all {
+    background: #e5e5e5;
+    color: #0066CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
 
-            <div class="content">
-                <h3>Matemática</h3>
-                <p>
-                    Explore o mundo dos números e das formas, desenvolvendo habilidades essenciais para a resolução de problemas.
-                </p>
+.course {
+    background: #f3f4f6;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
 
-                <button class="btn-access">Acessar</button>
-            </div>
-        </div>
+.course:hover {
+    transform: translateY(-6px);
+}
 
-        <div class="course">
-            <div class="img-box">
-                <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557">
-                <span class="tag">EDUCAÇÃO</span>
-                <span class="hours">15 HORAS</span>
-            </div>
+.img-box {
+    position: relative;
+    height: 180px;
+}
 
-            <div class="content">
-                <h3>Ciências Biológicas</h3>
-                <p>
-                    Descubra os segredos da vida e da natureza, desde o funcionamento das células até os ecossistemas.
-                </p>
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-                <button class="btn-access">Acessar</button>
-            </div>
-        </div>
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #facc15;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-    </div>
-</section>
-</html>
+.hours {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #2563eb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* BOTÃO */
+.btn-access {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #e5e7eb;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-access:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.descricao {
+    color: rgb(73, 72, 72);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon svg {
+    width: 22px;
+    height: 22px;
+}
