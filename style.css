@@ -103,10 +103,16 @@ nav a {
     margin: 10px 0 30px;
 }
 
-.grid {
+.benefits .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+}
+
+.courses .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .card {
@@ -131,39 +137,90 @@ nav a {
 .top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.top button {
-    background: white;
+.btn-all {
+    background: #e5e5e5;
     color: #0066CC;
     border: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-weight: bold;
 }
 
 .course {
-    background: white;
-    color: black;
-    border-radius: 15px;
+    background: #f3f4f6;
+    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
-.course img {
+.course:hover {
+    transform: translateY(-6px);
+}
+
+.img-box {
+    position: relative;
+    height: 180px;
+}
+
+.img-box img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.course div {
+.tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #facc15;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hours {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #2563eb;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.content {
     padding: 20px;
 }
 
-/* FOOTER */
-footer {
-    background: #111;
+.content p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0 20px;
+}
+
+/* BOTÃO */
+.btn-access {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #e5e7eb;
+    color: #2563eb;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-access:hover {
+    background: #2563eb;
     color: white;
-    text-align: center;
-    padding: 30px;
 }
 
 .descricao {
