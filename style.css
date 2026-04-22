@@ -1,0 +1,167 @@
+css * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0066CC;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    font-family: 'Outfit';
+    font-weight: 700;
+}
+
+.logo span {
+    display: block;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    background: white;
+    color: #0066CC;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    background: #0066CC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 60px;
+    color: white;
+}
+
+.hero-text h1 {
+    font-family: 'Outfit';
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+.cta {
+    background: black;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-img img {
+    width: 500px;
+    border-radius: 12px;
+}
+
+/* BENEFITS */
+.benefits {
+    padding: 80px 60px;
+}
+
+.benefits h2 {
+    font-family: 'Outfit';
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    background: #0066CC;
+    margin: 10px 0 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* COURSES */
+.courses {
+    background: #0066CC;
+    color: white;
+    padding: 80px 60px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.top button {
+    background: white;
+    color: #0066CC;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.course {
+    background: white;
+    color: black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.course img {
+    width: 100%;
+}
+
+.course div {
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
